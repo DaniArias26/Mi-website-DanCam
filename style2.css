@@ -150,7 +150,7 @@ p {
     position: absolute;
     width: 50px;
     left: 730px;
-    top: 450px;
+    top: 550px;
     rotate: 380deg;
 }
 
@@ -226,8 +226,8 @@ h2{
 .in3 {
     position: absolute;
     width: 250px;
-    top: 230px;
-    left: 0;
+    top: 250px;
+    left: -130px;
     rotate: 220deg;
 }
 
