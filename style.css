@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,35 +7,44 @@
 }
 
 html, body {
-    height: 190%; 
+    height: 100%;
     margin: 0;
     padding: 0;
     background-image: linear-gradient(#FFFFFF, rgb(166, 243, 255));
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: 'Montserrat', cursive;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 .container {
-    width: 90%; 
-    max-width: 1000px; 
-    margin: 0 auto; 
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
     background-color: #ffffff;
     border-radius: 15px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: relative;
+    position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    max-height: 90vh; /* Limita la altura al 90% de la pantalla */
+    overflow-y: auto; /* Activa el scroll si es necesario */
 }
+
 
 h1 {
     color: rgb(6, 193, 245);
     background-color: rgb(255, 250, 114);
     text-align: center;
-    font-size: 2.5rem; 
-    word-wrap: break-word; 
+    font-size: clamp(2rem, 5vw, 3rem); 
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    padding: 10px; 
+    border-radius: 10px; 
 }
 
 h, h2 {
@@ -45,8 +55,8 @@ h, h2 {
 }
 
 img {
-    max-width: 100%; 
-    height: auto; 
+    max-width: 100%;
+    height: auto;
     display: block;
     margin: 10px auto;
     border-radius: 10px;
@@ -57,13 +67,12 @@ table {
     width: 100%;
     margin: 20px auto;
     border-collapse: collapse;
-    
 }
 
 th, td {
     text-align: center;
     padding: 8px;
-    font-size: 1rem; 
+    font-size: 1rem;
 }
 
 th {
@@ -71,7 +80,7 @@ th {
 }
 
 tr:nth-child(even) {
-    background-color: #feeab7; 
+    background-color: #feeab7;
 }
 
 tr:hover {
@@ -88,24 +97,24 @@ a:hover {
     text-decoration: underline;
 }
 
-
 iframe {
-    width: 100%; 
+    width: 100%;
     height: auto;
-    aspect-ratio: 16/9; 
+    aspect-ratio: 16/9;
     display: block;
     margin: 20px auto;
 }
 
-@media (max-width: 768px){
-
+@media (max-width: 768px) {
     h1, h, h2 {
-        font-size: 1.5rem; 
+        font-size: 1.5rem;
     }
+
     table th, table td {
         font-size: 0.9rem;
     }
+
     iframe {
-        aspect-ratio: 4/3; 
-}
+        aspect-ratio: 4/3;
+    }
 }
