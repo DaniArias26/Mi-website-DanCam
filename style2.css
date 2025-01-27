@@ -18,7 +18,7 @@ p{
 }
 
 .container{
-    max-width: 1400px;
+    max-width: 96%;
     margin: 0 auto;
 }
 
@@ -226,7 +226,7 @@ h2{
 .in3 {
     position: absolute;
     width: 250px;
-    top: 250px;
+    top: 370px;
     left: -130px;
     rotate: 220deg;
 }
